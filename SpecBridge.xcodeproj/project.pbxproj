@@ -6,14 +6,35 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		833554E32EE3A72200387D03 /* MWDATCamera in Frameworks */ = {isa = PBXBuildFile; productRef = 833554E22EE3A72200387D03 /* MWDATCamera */; };
+		833554E52EE3A72200387D03 /* MWDATCore in Frameworks */ = {isa = PBXBuildFile; productRef = 833554E42EE3A72200387D03 /* MWDATCore */; };
+		833554E72EE3A72200387D03 /* MWDATMockDevice in Frameworks */ = {isa = PBXBuildFile; productRef = 833554E62EE3A72200387D03 /* MWDATMockDevice */; };
+		833554EE2EE3B87000387D03 /* HaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = 833554ED2EE3B87000387D03 /* HaishinKit */; };
+		833554F02EE3B87000387D03 /* RTMPHaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = 833554EF2EE3B87000387D03 /* RTMPHaishinKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		833554D32EE3A69500387D03 /* TwitchStreamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchStreamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		833554D32EE3A69500387D03 /* SpecBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpecBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		833554E92EE3A7FF00387D03 /* Exceptions for "SpecBridge" folder in "SpecBridge" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 833554D22EE3A69500387D03 /* SpecBridge */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		833554D52EE3A69500387D03 /* TwitchStreamer */ = {
+		833554D52EE3A69500387D03 /* SpecBridge */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TwitchStreamer;
+			exceptions = (
+				833554E92EE3A7FF00387D03 /* Exceptions for "SpecBridge" folder in "SpecBridge" target */,
+			);
+			path = SpecBridge;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				833554E32EE3A72200387D03 /* MWDATCamera in Frameworks */,
+				833554F02EE3B87000387D03 /* RTMPHaishinKit in Frameworks */,
+				833554E72EE3A72200387D03 /* MWDATMockDevice in Frameworks */,
+				833554EE2EE3B87000387D03 /* HaishinKit in Frameworks */,
+				833554E52EE3A72200387D03 /* MWDATCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +58,7 @@
 		833554CA2EE3A69500387D03 = {
 			isa = PBXGroup;
 			children = (
-				833554D52EE3A69500387D03 /* TwitchStreamer */,
+				833554D52EE3A69500387D03 /* SpecBridge */,
 				833554D42EE3A69500387D03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +66,7 @@
 		833554D42EE3A69500387D03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				833554D32EE3A69500387D03 /* TwitchStreamer.app */,
+				833554D32EE3A69500387D03 /* SpecBridge.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +74,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		833554D22EE3A69500387D03 /* TwitchStreamer */ = {
+		833554D22EE3A69500387D03 /* SpecBridge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 833554DE2EE3A69600387D03 /* Build configuration list for PBXNativeTarget "TwitchStreamer" */;
+			buildConfigurationList = 833554DE2EE3A69600387D03 /* Build configuration list for PBXNativeTarget "SpecBridge" */;
 			buildPhases = (
 				833554CF2EE3A69500387D03 /* Sources */,
 				833554D02EE3A69500387D03 /* Frameworks */,
@@ -61,13 +87,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				833554D52EE3A69500387D03 /* TwitchStreamer */,
+				833554D52EE3A69500387D03 /* SpecBridge */,
 			);
-			name = TwitchStreamer;
+			name = SpecBridge;
 			packageProductDependencies = (
+				833554E22EE3A72200387D03 /* MWDATCamera */,
+				833554E42EE3A72200387D03 /* MWDATCore */,
+				833554E62EE3A72200387D03 /* MWDATMockDevice */,
+				833554ED2EE3B87000387D03 /* HaishinKit */,
+				833554EF2EE3B87000387D03 /* RTMPHaishinKit */,
 			);
 			productName = TwitchStreamer;
-			productReference = 833554D32EE3A69500387D03 /* TwitchStreamer.app */;
+			productReference = 833554D32EE3A69500387D03 /* SpecBridge.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 833554CE2EE3A69500387D03 /* Build configuration list for PBXProject "TwitchStreamer" */;
+			buildConfigurationList = 833554CE2EE3A69500387D03 /* Build configuration list for PBXProject "SpecBridge" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -94,12 +125,16 @@
 			);
 			mainGroup = 833554CA2EE3A69500387D03;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				833554E12EE3A72200387D03 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */,
+				833554EC2EE3B87000387D03 /* XCRemoteSwiftPackageReference "HaishinKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 833554D42EE3A69500387D03 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				833554D22EE3A69500387D03 /* TwitchStreamer */,
+				833554D22EE3A69500387D03 /* SpecBridge */,
 			);
 		};
 /* End PBXProject section */
@@ -254,6 +289,12 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpecBridge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpecBridge;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Need to connect to Ray-Ban Meta glasses";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Required for streaming video from Ray-Ban Meta glasses.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Required for streaming audio from Ray-Ban Meta glasses.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -269,18 +310,19 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dukes.TwitchStreamer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dukes.SpecBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.1;
 			};
 			name = Debug;
@@ -298,6 +340,12 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpecBridge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpecBridge;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Need to connect to Ray-Ban Meta glasses";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Required for streaming video from Ray-Ban Meta glasses.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Required for streaming audio from Ray-Ban Meta glasses.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -313,18 +361,19 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dukes.TwitchStreamer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dukes.SpecBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.1;
 			};
 			name = Release;
@@ -332,7 +381,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		833554CE2EE3A69500387D03 /* Build configuration list for PBXProject "TwitchStreamer" */ = {
+		833554CE2EE3A69500387D03 /* Build configuration list for PBXProject "SpecBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				833554DC2EE3A69600387D03 /* Debug */,
@@ -341,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		833554DE2EE3A69600387D03 /* Build configuration list for PBXNativeTarget "TwitchStreamer" */ = {
+		833554DE2EE3A69600387D03 /* Build configuration list for PBXNativeTarget "SpecBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				833554DF2EE3A69600387D03 /* Debug */,
@@ -351,6 +400,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		833554E12EE3A72200387D03 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/meta-wearables-dat-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+		833554EC2EE3B87000387D03 /* XCRemoteSwiftPackageReference "HaishinKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shogo4405/HaishinKit.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		833554E22EE3A72200387D03 /* MWDATCamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 833554E12EE3A72200387D03 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATCamera;
+		};
+		833554E42EE3A72200387D03 /* MWDATCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 833554E12EE3A72200387D03 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATCore;
+		};
+		833554E62EE3A72200387D03 /* MWDATMockDevice */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 833554E12EE3A72200387D03 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATMockDevice;
+		};
+		833554ED2EE3B87000387D03 /* HaishinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 833554EC2EE3B87000387D03 /* XCRemoteSwiftPackageReference "HaishinKit" */;
+			productName = HaishinKit;
+		};
+		833554EF2EE3B87000387D03 /* RTMPHaishinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 833554EC2EE3B87000387D03 /* XCRemoteSwiftPackageReference "HaishinKit" */;
+			productName = RTMPHaishinKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 833554CB2EE3A69500387D03 /* Project object */;
 }
